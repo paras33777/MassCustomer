@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Payment Settlement View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PaymentSettlementViewController" id="Y6W-OH-hqX" customClass="PaymentSettlementViewController" customModule="Customer_BBC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QcJ-4X-1xi">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettlementPaymentRowTableViewCell" id="FKP-4n-ra3" customClass="SettlementPaymentRowTableViewCell" customModule="Customer_BBC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="23"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FKP-4n-ra3" id="GWJ-1D-LWn">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="23"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fi1-aJ-b3c">
+                                                    <rect key="frame" x="15" y="11" width="0.0" height="0.33333333333333393"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVf-9x-frn">
+                                                    <rect key="frame" x="378" y="11" width="0.0" height="1.3333333333333339"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Fi1-aJ-b3c" secondAttribute="bottom" constant="11.67" id="AwJ-rb-aP3"/>
+                                                <constraint firstItem="TVf-9x-frn" firstAttribute="top" secondItem="GWJ-1D-LWn" secondAttribute="top" constant="11" id="Mot-QN-ekL"/>
+                                                <constraint firstAttribute="bottom" secondItem="TVf-9x-frn" secondAttribute="bottom" constant="10.67" id="eqT-eP-etq"/>
+                                                <constraint firstAttribute="trailing" secondItem="TVf-9x-frn" secondAttribute="trailing" constant="15" id="g6h-8D-WiR"/>
+                                                <constraint firstItem="Fi1-aJ-b3c" firstAttribute="top" secondItem="GWJ-1D-LWn" secondAttribute="top" constant="11" id="mTv-0D-2Is"/>
+                                                <constraint firstItem="Fi1-aJ-b3c" firstAttribute="leading" secondItem="GWJ-1D-LWn" secondAttribute="leading" constant="15" id="sEf-SF-nW4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="TVf-9x-frn" id="gOe-B9-2cZ"/>
+                                            <outlet property="titleLabel" destination="Fi1-aJ-b3c" id="Wrt-2Q-Nik"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettlementPaymentFooterTableViewCell" id="8nP-8R-aSv" customClass="SettlementPaymentFooterTableViewCell" customModule="Customer_BBC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="73" width="393" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8nP-8R-aSv" id="poi-D4-Rz9">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJ9-X0-aJ5">
+                                                    <rect key="frame" x="20" y="4" width="353" height="34.333333333333336"/>
+                                                    <color key="backgroundColor" red="0.32389956710000001" green="0.62499678130000003" blue="0.45860463379999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                                                    <state key="normal" title="Settlement"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="fJ9-X0-aJ5" secondAttribute="bottom" constant="5.6699999999999999" id="8zK-H0-Vxp"/>
+                                                <constraint firstItem="fJ9-X0-aJ5" firstAttribute="leading" secondItem="poi-D4-Rz9" secondAttribute="leading" constant="20" id="Sch-xw-sgR"/>
+                                                <constraint firstItem="fJ9-X0-aJ5" firstAttribute="top" secondItem="poi-D4-Rz9" secondAttribute="top" constant="4" id="fdj-dh-YMa"/>
+                                                <constraint firstAttribute="trailing" secondItem="fJ9-X0-aJ5" secondAttribute="trailing" constant="20" id="gKu-mr-HnL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="settleMentButton" destination="fJ9-X0-aJ5" id="gDx-Nf-ZSe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="3mG-k1-hSk"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="qSV-gb-S0p"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="QcJ-4X-1xi" secondAttribute="trailing" id="CXa-xo-B20"/>
+                            <constraint firstAttribute="bottom" secondItem="QcJ-4X-1xi" secondAttribute="bottom" id="Tyj-9B-aFV"/>
+                            <constraint firstItem="QcJ-4X-1xi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="eYX-d3-wMk"/>
+                            <constraint firstItem="QcJ-4X-1xi" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ulf-TN-kLf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataTableview" destination="QcJ-4X-1xi" id="KNL-hS-pRO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="488" y="7"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

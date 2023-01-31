@@ -1,0 +1,6 @@
+framework module Pods_Customer_BBCTests {
+  umbrella header "Pods-Customer BBCTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Customer BBC
+
+  Created by Prashant Kumar on 19/12/22.
+  
+*/
+//OrderDetail
+"Tax"  = "Tax";
+"NetTotal" = "NetTotal";
+"Total" = "Total";
+//OrderDetail
+
+//Store
+"TenLakhEX" = "Total amount should not greater than 9,99,999";

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>298577684633-2739ac80jfp4d0kjajl0d7u1rqnetqqf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.298577684633-2739ac80jfp4d0kjajl0d7u1rqnetqqf</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>298577684633-098ro2o0pjpu7vlnsph0m7bps7bjv52j.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCCByukgYsdV1IoOUhDdOWHetolf3ILKu4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>298577684633</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.MaasERP.bbcCustomer</string>
+	<key>PROJECT_ID</key>
+	<string>maas-crm-customer</string>
+	<key>STORAGE_BUCKET</key>
+	<string>maas-crm-customer.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:298577684633:ios:299051d693ae03d882b008</string>
+</dict>
+</plist>

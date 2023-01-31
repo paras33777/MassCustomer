@@ -1,0 +1,6 @@
+framework module Pods_Customer_BBC {
+  umbrella header "Pods-Customer BBC-umbrella.h"
+
+  export *
+  module * { export * }
+}

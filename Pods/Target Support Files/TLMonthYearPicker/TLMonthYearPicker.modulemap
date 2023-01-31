@@ -1,0 +1,6 @@
+framework module TLMonthYearPicker {
+  umbrella header "TLMonthYearPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
